@@ -2,84 +2,116 @@
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-} 
-.header{ 
-    background-color: #746565; 
-    height: 100vh; 
-    width: 100%;
-} 
-.header h1{ 
-    width: 90%;  
-    text-align: center;
-    padding: 40px;
-    color: rgb(5, 5, 5); 
-    font-weight: bold; 
-    font-size: 40px;
-    text-transform: capitalize; 
-    text-decoration: underline;
-} 
-.flex-container{ 
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-} 
-.flex-item img{ 
-    width: 400px;
-    height: 300px;
-    margin-bottom: 20px; 
-}  
-.text h2,h3,h4{
-    text-align: center;
 }
+.page{ 
+    background-color: #00a413;  
+    width: 100%; 
+    height: 100vh;
+    display: flex;
+} 
+.image{
+    display: flex;  
+} 
+.image img{
+    height: auto;
+    width: 100%; 
+}
+
+.image, .text{
+    width: 50%; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    margin-left: 20px;
+} 
+.text{
+    text-align: center; 
+    text-decoration: none;
+}
+.text h1{
+    font-family: 'Roboto', sans-serif; 
+    text-transform: uppercase; 
+    color:rgb(255, 252, 252); 
+    font-size: 50px;  
+    margin-top: 30px;
+    padding: 50px ; 
+    text-shadow: 5px 3px 3px lawngreen;
+} 
 .text h2{
-    padding-bottom: 20px; 
-    color: rgb(2, 2, 2);
-    font-size: 25px; 
-    font-weight: 400px;
-}  
-.text h3,h4{ 
-    font-size: 20px; 
-    color: rgb(0, 0, 0); 
-    text-transform: capitalize;
+    font-family: 'Playfair Display', serif; 
+    font-size: 30px;  
+    color: #3c3c3c;
+} 
+.text h3{ 
+    font-family: 'EB Garamond', serif; 
+    text-transform: uppercase; 
+    padding-top: 30px; 
+    padding-bottom: 10px;
+    font-weight: bold; 
+    font-size: 25px;  
+    color: white;
+} 
+.text h4{
+    font-size: 16px; 
+    color: whitesmoke;
 } 
 .button{ 
-    margin-top: 30px;
-    text-align: center;
-}
-.button a{ 
-    background: rgb(110, 110, 110);
-    padding: 10px 40px;
-    text-decoration: none;
-    font-weight: bold;
-    color: rgb(11, 10, 10);  
-    text-align: center;  
-    text-transform: uppercase;
-}
+margin: 50px;
+} 
+.button a{
+    text-decoration: none; 
+    color: rgb(5, 5, 5); 
+    background-color: rgb(167, 167, 167); 
+    padding: 10px 18px; 
+    text-transform: uppercase;   
+    font-weight: bold; 
+} 
 .button a:hover{
-    background: rgb(67, 67, 67); 
-    background-color: rgb(11, 240, 240);
-    color: rgb(250, 249, 249);
+    color: white;
+    background-color: rgb(40, 40, 40);
 }
 
 
-@media screen and (max-width: 1250px) {
-    .flex-container{
+
+
+@media screen and (max-width: 750px){
+    .image{
+        position: relative;
+    }
+    .text{
+        position:relative; 
+    }
+    .text h1{ 
+        font-size: 30px; 
+    } 
+    .text h2{ 
+        font-size: 20px; 
+        color: black;
+    } 
+    .button{ 
         position: relative;
     } 
-    .button{
-        font-size: larger;
-    } 
+    .button a{
+        font-size: 13px;
+    }
 }
-
-@media only screen and (min-width: 800px) and (max-width:1250px) {
-    .flex-container{
-        width: auto;
-        height: auto;
+@media screen and (max-width: 820px){
+    .image{
+        position: relative;
+    }
+    .text{
+        position:relative; 
+    }
+    .text h1{ 
+        font-size: 30px; 
     } 
-    .flex-item{
-        width: auto;
-        height: auto;
+    .text h2{ 
+        font-size: 20px; 
+        color: black;
+    } 
+    .button{ 
+        position: relative;
+    } 
+    .button a{
+        font-size: 13px;
     }
 }
